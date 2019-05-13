@@ -23,7 +23,7 @@ class App extends Component {
     // const city = e.target.elements.city.value
     const get_api = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}${API_KEY}`)
     const data = await get_api.json()
-//    console.log(data.main.humidity)
+  //  console.log(data.main.temp)
     this.setState({
       temperature: data.main.temp,
       city: data.name,

@@ -4,12 +4,12 @@ class Details extends Component {
   render() {
     return (
       <div>
-        {this.props.temperature}
-        {this.props.city}
-        {this.props.MaxTemp}
-        {this.props.MinTemp}
-        {this.props.description}
-        {this.props.humidity}
+        {this.props.city && <p>Location: {this.props.city}</p>}
+        {this.props.temperature && <p>Temperature: {this.props.temperature}</p>}
+        {this.props.MaxTemp && <p>Max Temperature: {this.props.MaxTemp}</p>}
+        {this.props.MinTemp && <p>min Temperature: {this.props.MinTemp}</p>}
+        {this.props.description && <p>Description: {this.props.description}</p>}
+        {this.props.humidity && <p>Humidity: {this.props.humidity}</p>}
       </div>
     )
   }
