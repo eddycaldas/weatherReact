@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React from 'react'
 
 const Title = () => (
     <div>
-      <h2>Weather</h2>
-      <p>Find the weather in your city</p>
+      <p className='title-container__title'>Weather</p>
+      <p className='title-container__subtitle'>Find the weather in your city</p>
     </div>
   )
 

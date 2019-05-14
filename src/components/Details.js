@@ -3,7 +3,7 @@ import React from 'react'
 
 const Details = (props) => {
   return (
-      <div>
+      <div className='detail-container'>
         {props.city && <p>Location: {props.city}</p>}
         {props.temperature && <p>Temperature: {props.temperature}</p>}
         {props.MaxTemp && <p>Max Temperature: {props.MaxTemp}</p>}

@@ -21,7 +21,7 @@ class App extends Component {
     e.preventDefault()
     const city = e.target.elements[0].value
     // const city = e.target.elements.city.value
-    const get_api = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}${API_KEY}`)
+    const get_api = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial${API_KEY}`)
     const data = await get_api.json()
   //  console.log(data.main.temp)
   if(city) {
@@ -43,7 +43,7 @@ class App extends Component {
   
   render() {
     return (
-      <div>
+      <div className='title-container'>
         <Title />
         <InputInfo getWeather={this.getWeather}/>
         <Details 
