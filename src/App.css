@@ -17,7 +17,7 @@ body {
 }
 .title-container {
   height: 100vh;
-  filter: brightness(70%);
+  /* filter: brightness(70%); */
       background: linear-gradient(35deg, 	#FF7F50, #0080ff, rgb(14, 104, 105));
   background-size: cover;
   display: flex;
