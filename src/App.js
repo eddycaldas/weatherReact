@@ -24,6 +24,7 @@ class App extends Component {
     const get_api = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}${API_KEY}`)
     const data = await get_api.json()
   //  console.log(data.main.temp)
+  if(city) {
     this.setState({
       temperature: data.main.temp,
       city: data.name,
@@ -33,6 +34,11 @@ class App extends Component {
       humidity: data.main.humidity,
       error: ''
     })
+  } else {
+    this.setState({
+      error: 'Enter a City'
+    })
+  }
   }
   
   render() {

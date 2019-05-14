@@ -10,6 +10,7 @@ class Details extends Component {
         {this.props.MinTemp && <p>min Temperature: {this.props.MinTemp}</p>}
         {this.props.description && <p>Description: {this.props.description}</p>}
         {this.props.humidity && <p>Humidity: {this.props.humidity}</p>}
+        {this.props.error && <p>{this.props.error}</p>}
       </div>
     )
   }
